@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn To Code Series Introduction to Python.md</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="learn-to-code-series-introducing-python">Learn to Code Series - Introducing Python</h1>
+
+
+
+<h2 id="welcome-to-python">Welcome to Python</h2>
+
+<p>Follow along at <a href="http://go.chevron.com/learn-to-code">go.chevron.com/learn-to-code</a></p>
+
+
+
+<h3 id="quick-setup">Quick setup</h3>
+
+<p>On Windows make sure you have both python and notepad++ installed on your computer.</p>
+
+<ol>
+<li>Run PowerShell from the Start menu.</li>
+<li>In your PowerShell run <code>python</code>. You run things in PowerShell by just typing the name and pressing <code>Enter</code> <br>
+<ul><li>If you run <code>python</code> and it’s not there (<code>python is not recognized..</code>). First make sure you have installed python.</li>
+<li>If <code>python</code> is still not recognized then in PowerShell enter this: <br>
+<code>[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Program Files\Python27", "User")</code></li>
+<li>Close PowerShell and then start it again to make sure Python now runs.</li></ul></li>
+<li>Type <code>quit()</code> and press <code>Enter</code> to exit python.</li>
+</ol>
+
+
+
+<h3 id="your-first-program">Your First Program</h3>
+
+<p>Type the following text into a single file named <code>ex1.py</code></p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-keyword">print</span> <span class="hljs-string">"Welcome to Python"</span>
+<span class="hljs-keyword">print</span> <span class="hljs-string">"Hello everyone"</span>
+<span class="hljs-keyword">print</span> <span class="hljs-string">"The print command outputs text to the screen"</span>
+<span class="hljs-keyword">print</span> <span class="hljs-string">"Unleash your inner code monkey"</span></code></pre>
+
+<p>In PowerShell run the file by typing: <br>
+<code>python ex1.py</code></p>
+
+
+
+<h3 id="what-is-python">What is Python</h3>
+
+<p>Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, or Scheme. It is open-source freeware, meaning you can download it for free and use it for any purpose. Python is efficient, fast, broad and easy</p>
+
+
+
+<h3 id="why-python">Why Python</h3>
+
+<p>Python has all the functionality of other languages and more. You might be surprised how many professional products are built on Python code: Gmail, Google Maps, YouTube, reddit, Spotify, turntable.fm, Yahoo! Groups, and the list goes on.</p>
+
+
+
+<h2 id="syntax">Syntax</h2>
+
+<p>Syntax refers to the spelling and grammar of a programming language.</p>
+
+
+
+<h3 id="math-operations">Math Operations</h3>
+
+<p>Every programming language has some kind of way to do math. You can add, subtract, multiply, and divide like this: <br>
+<code>addition = 9 + 8</code> <br>
+<code>subtraction = 10 - 1</code> <br>
+<code>multiplication = 10 * 1</code> <br>
+<code>division = 9 / 4</code></p>
+
+
+
+<h3 id="variables">Variables</h3>
+
+<p>A Variable stores a piece of data and gives it a specific name. The normal naming convention is called snake case.</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">greeting =  <span class="hljs-string">"Welcome to your local gas station."</span>
+gas_price = <span class="hljs-number">3.49</span>
+gallons_to_fill = <span class="hljs-number">14</span>
+total = gas_price * gallons_to_fill
+
+<span class="hljs-keyword">print</span> greeting
+<span class="hljs-keyword">print</span> <span class="hljs-string">"The price of gas is"</span>, gas_price, <span class="hljs-string">"per gallon."</span>
+<span class="hljs-keyword">print</span> <span class="hljs-string">"You filled up"</span>, gallons_to_fill, <span class="hljs-string">"gallons."</span>
+<span class="hljs-keyword">print</span> <span class="hljs-string">"Your total is"</span>, total</code></pre>
+
+
+
+<h3 id="booleans">Booleans</h3>
+
+<p>Booleans are a type of variable that can either be true or false. Just like a light switch can be on or off.</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">light_switch_on = <span class="hljs-keyword">True</span>
+light_switch_off = <span class="hljs-keyword">False</span></code></pre>
+
+
+
+<h3 id="reassigning-variables">Reassigning Variables</h3>
+
+<p>Say we have <code>light_switch = True</code> and we want to turn it off. We can reassign the variable like this:</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">light_switch = <span class="hljs-keyword">False</span></code></pre>
+
+
+
+<h3 id="comments">Comments</h3>
+
+<p>Comments are important in code. They are not read by the computer. It is for humans! It’s a way to document you code so the next person or yourself can understand what you did a day, week, or many years ago.</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-comment">#This is single line comment</span></code></pre>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-string">"""This is 
+a multiline comment
+"""</span></code></pre>
+
+
+
+<h3 id="syntax-exercise">Syntax Exercise</h3>
+
+<p>The following total cost for us to develop our oil this quarter was <span>$</span>113,000.22 and the number of barrels we produced was 1648. What was the price per barrel? Use variable names to do your calculations.</p>
+
+
+
+<h2 id="strings">Strings</h2>
+
+<p>Strings are variables that represent words. Strings can contain letters, numbers, spaces, and symbols. This is how you write strings:</p>
+
+<p><code>greeting = "Hello World"</code> <br>
+<code>python_cool_variable = "Python is the coolest!"</code> <br>
+<code>meaning_of_life = "The meaning of life is 42"</code></p>
+
+<p>There are some characters that can create problems. For example, what if you wanted to print an article name. This is how you would do it: <br>
+<code>print "The article \"Chevron Stock is up\" is a good read."</code></p>
+
+<p>To print a string or any variable’s contents you do this:</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">my_variable = <span class="hljs-string">"This is my variable"</span>
+<span class="hljs-keyword">print</span> my_variable</code></pre>
+
+
+
+<h3 id="advanced-printing">Advanced Printing</h3>
+
+
+
+<h4 id="concatenation">Concatenation</h4>
+
+<p>Concatenation is combining strings together with other objects.  <br>
+<code>print "Life " + "of " + "pi"</code> <br>
+This will print <code>Life of pi</code></p>
+
+
+
+<h4 id="explicit-string-conversion">Explicit String Conversion</h4>
+
+<p>Even though variables can be any type when printing them they need to be strings. So to do this you have to explicitly force them change their type.</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">    <span class="hljs-keyword">print</span> <span class="hljs-string">"I have "</span> + str(<span class="hljs-number">6</span>) + <span class="hljs-string">" barrels of oil"</span></code></pre>
+
+<p>This prints <code>I have 6 barrels of oil</code></p>
+
+
+
+<h4 id="string-formatting-with">String formatting with %</h4>
+
+<p>We use the % operator to replace the %s placeholders with the variables in parentheses</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">    company_name = raw_input(<span class="hljs-string">"What is your company name? "</span>)
+    stock_price = raw_input(<span class="hljs-string">"What do you wish the stock price was? "</span>)
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"%s stock price is %s"</span> % (name, stock_price)</code></pre>
+
+
+
+<h3 id="string-exercise">String Exercise</h3>
+
+<p>Make a small program that asks for your name and how many years you have worked at Chevron. Then print out something like this: <br>
+<code>Hi my name is Gabe. I have worked for Chevron for 2.5 years.</code></p>
+
+<p>Don’t forget to use variables.</p>
+
+
+
+<h2 id="conditionals-and-control-flow">Conditionals and Control Flow</h2>
+
+<p>Coding is the modeling of the real world. Therefore we need a way to allow our code to make decisions. Welcome conditionals and control flow!</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">gasStationSurvey</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"What is your favorite gas station?"</span>
+    answer = raw_input().lower()
+    <span class="hljs-keyword">if</span> answer == <span class="hljs-string">"chevron"</span>:
+        <span class="hljs-keyword">print</span> <span class="hljs-string">"You chose wisely"</span>
+    <span class="hljs-keyword">elif</span> answer == <span class="hljs-string">"exxon"</span>:
+        <span class="hljs-keyword">print</span> <span class="hljs-string">"You chose poorly"</span>
+    <span class="hljs-keyword">else</span>: 
+        <span class="hljs-keyword">print</span> <span class="hljs-string">"You probably saved some dough"</span>
+
+gasStationSurvey()</code></pre>
+
+
+
+<h3 id="comparators">Comparators</h3>
+
+<p>Comparators allow us to determine if something is true or false. </p>
+
+<ol>
+<li><code>==</code> equals</li>
+<li><code>!=</code> not equal</li>
+<li><code>&lt;</code> less than</li>
+<li><code>&lt;=</code> less-than-equal</li>
+<li><code>&gt;</code> greater than</li>
+<li><code>&gt;=</code> greater-than-equal</li>
+</ol>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-number">6</span> == <span class="hljs-number">6</span> <span class="hljs-comment">#returns True</span>
+<span class="hljs-number">7</span> != <span class="hljs-number">4</span> <span class="hljs-comment">#returns True</span>
+<span class="hljs-number">3</span> &gt; <span class="hljs-number">9</span> <span class="hljs-comment">#returns False</span>
+<span class="hljs-number">2</span> &lt; <span class="hljs-number">4</span> <span class="hljs-comment">#returns True</span>
+<span class="hljs-number">6</span> &lt;= <span class="hljs-number">6</span> <span class="hljs-comment">#returns True</span>
+<span class="hljs-number">7</span> &gt;= <span class="hljs-number">9</span> <span class="hljs-comment">#returns False</span></code></pre>
+
+<p>Note that <code>=</code>  is different than <code>==</code>. <code>=</code> assigns. Whereas <code>==</code> compares.</p>
+
+
+
+<h3 id="boolean-operators">Boolean Operators</h3>
+
+<p>Sometimes you want to combine comparators together to form more complex logic. This is what boolean operators are for.</p>
+
+<p><code>and</code> checks if both statements are true <br>
+<code>or</code>    checks if only one statement is true <br>
+<code>not</code> is the opposite of a statement</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-number">2</span> &lt; <span class="hljs-number">4</span> <span class="hljs-keyword">and</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">9</span> <span class="hljs-comment">#returns False</span>
+<span class="hljs-number">7</span> == <span class="hljs-number">13</span> <span class="hljs-keyword">or</span> <span class="hljs-number">4</span> &gt; <span class="hljs-number">1</span> <span class="hljs-comment">#returns True</span>
+<span class="hljs-keyword">not</span> <span class="hljs-number">4</span> == <span class="hljs-number">5</span> <span class="hljs-comment">#returns True</span></code></pre>
+
+
+
+<h3 id="order-of-operations">Order of operations!</h3>
+
+<p>Ah not math! Yes, there is an order of operations in the way these boolean operators are evaluated. It is important that you know this so you aren’t surprised by your computers answers.</p>
+
+<ol>
+<li><code>not</code> is evaluated first</li>
+<li><code>and</code> is evaluated next</li>
+<li><code>or</code> is evaluated last</li>
+</ol>
+
+<p>For example:</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-comment">#This returns True</span>
+bool_example = <span class="hljs-keyword">True</span> <span class="hljs-keyword">or</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">False</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">False</span></code></pre>
+
+
+
+<h3 id="comparators-exercise">Comparators Exercise</h3>
+
+<p>Given the expected result use some combination of boolean operators to achieve that result. Use each boolean operator, <code>not</code> <code>and</code> <code>or</code>, at least once.</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-comment"># Make me false!</span>
+bool_one = (<span class="hljs-number">2</span> &lt;= <span class="hljs-number">2</span>) <span class="hljs-keyword">and</span> <span class="hljs-string">"Alpha"</span> == <span class="hljs-string">"Bravo"</span>  <span class="hljs-comment"># We did this one for you!</span>
+
+<span class="hljs-comment"># Make me true!</span>
+bool_two = 
+
+<span class="hljs-comment"># Make me false!</span>
+bool_three = 
+
+<span class="hljs-comment"># Make me true!</span>
+bool_four = 
+
+<span class="hljs-comment"># Make me true!</span>
+bool_five = </code></pre>
+
+
+
+<h3 id="control-flow">Control Flow</h3>
+
+<p>Using comparators we can now begin to build logic into our programs. This will let our code decide to go in one direction or another based on the results of our comparisons.</p>
+
+
+
+<h4 id="if-statement">if statement</h4>
+
+<p><code>if</code> is a conditional statement that executes some specific code after checking if its expression is <code>True</code></p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &lt; <span class="hljs-number">8</span>:
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"Three is less than eight!"</span></code></pre>
+
+<p>If our test condition had been <code>False</code> nothing would have been displayed because our program would have jumped past all of the code inside the if block. Enter else statements.</p>
+
+<p>Notice the colon and the indentation after the <code>if</code> statement. These aren’t optional! This is how Python knows that we are still inside of the <code>if</code> statement. As soon as Python sees a line that isn’t indented, that is the end of the <code>if</code> statement. Same goes for functions.</p>
+
+
+
+<h4 id="whitespace">Whitespace</h4>
+
+<p>Whitespace is used to structure code. Python focuses on readability.</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-comment">#this code will cause an indentation error</span>
+<span class="hljs-keyword">if</span> oil_drums &gt; <span class="hljs-number">0</span>:
+<span class="hljs-keyword">print</span> <span class="hljs-string">"I have oil drums! Time to sell them"</span></code></pre>
+
+<p>You will get this error every time your whitespace is off. So, lets examine this error. <br>
+<code>IndentationError: expected an indented block</code></p>
+
+
+
+<h4 id="properly-indented-code">Properly indented code</h4>
+
+<p>Indent your code with 4 spaces</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">()</span>:</span>
+  oil_drum = <span class="hljs-number">12</span>
+  <span class="hljs-keyword">return</span> oil_drum</code></pre>
+
+
+
+<h4 id="else-statement">else statement</h4>
+
+<p>The <code>else</code> statement is the second keyword that we can use in combination with the <code>if</code> keyword. An <code>if</code>/<code>else</code> pair says: “If this expression is true, run this indented code block; otherwise run this code after the else statement.”</p>
+
+<p>Unlike <code>if</code>, <code>else</code> doesn’t depend on an expression, it is a catch-all. For example:</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">8</span>:
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"I don't get printed!"</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"I get printed!"</span></code></pre>
+
+
+
+<h4 id="elif-statement">elif statement</h4>
+
+<p><code>elif</code> is short for “else if” and can be used to add more possible options after an if statement. </p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">num = <span class="hljs-number">15</span>
+<span class="hljs-keyword">if</span> num &lt; <span class="hljs-number">10</span>:
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"number is less than 10"</span>
+<span class="hljs-keyword">elif</span> num &gt; <span class="hljs-number">10</span>:
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"number is greater than 10"</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"number is equal to 10"</span></code></pre>
+
+
+
+<h4 id="control-flow-exercise">Control Flow Exercise</h4>
+
+<p>We are going to create an actual program in this section. Open up notepad++. </p>
+
+<p>Create a program that asks for  <br>
+- an employee’s name, <em>tip: use <code>raw_input()</code> to asks questions</em> <br>
+- a performance rating (3, 2, 1),  <br>
+- and a comment on their performance. </p>
+
+<p>If the rating is a  <br>
+- 1 print out that the employee is a rockstar. <br>
+- If the rating is 2 or 3 print out that the employee has room for improvement. <br>
+- If any other input is given print out you have entered the wrong type of input.</p>
+
+<p>Also print out the supervisor’s comment for each rating.</p>
+
+
+
+<h5 id="what-you-should-see">What You Should See</h5>
+
+
+
+<pre class="prettyprint"><code class="language-Enter in the employee's name: Julie hljs applescript">Enter <span class="hljs-keyword">in</span> <span class="hljs-keyword">the</span> employee's performance rating(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>): <span class="hljs-number">1</span>
+Julie <span class="hljs-keyword">is</span> a rockstar
+Your supervisors comment was: Julie was amazing <span class="hljs-keyword">to</span> work <span class="hljs-keyword">with</span> <span class="hljs-keyword">and</span> I think she <span class="hljs-keyword">is</span> <span class="hljs-function_start"><span class="hljs-keyword">on</span></span> <span class="hljs-keyword">the</span> way <span class="hljs-keyword">to</span> becoming a great asset.</code></pre>
+
+
+
+<h2 id="functions">Functions</h2>
+
+<p>A function is a collection of code that we group together and give a name. We can now use this group of code as many times as we want. </p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">square</span><span class="hljs-params">(number)</span>:</span>
+    <span class="hljs-string">"""Squares the number passed to the function"""</span>
+    sqr_num = number * number
+    <span class="hljs-keyword">return</span> sqr_num
+
+square(<span class="hljs-number">5</span>) <span class="hljs-comment">#returns the value 25</span></code></pre>
+
+
+
+<h3 id="function-syntax">Function Syntax</h3>
+
+<ol>
+<li><p>The <strong>header</strong>, which includes the keyword <code>def</code> (stands for define), the name of the function, parenthesis () and any <strong>parameters</strong> the function requires.  <br>
+<code>def hello_world(): // There are no parameters</code></p></li>
+<li><p>An optional <strong>comment</strong> explaining what the function does. <br>
+<code>"""Prints 'Hello World!' to the console"""</code></p></li>
+<li><p>The <strong>body</strong>, which describes the procedures the function carries out. The body is indented, just like for conditional statements. <br>
+<code>print "Hello World!"</code></p></li>
+</ol>
+
+<p>Putting it all together the function it looks like this:</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_world</span><span class="hljs-params">()</span>:</span> 
+    <span class="hljs-string">"""Prints 'Hello World!' to the console"""</span>
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"hello world"</span></code></pre>
+
+
+
+<h3 id="call-and-response">Call and Response</h3>
+
+<p>Ok great we know how to define them, but how do we use them? </p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_chevron</span><span class="hljs-params">()</span>:</span> 
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"Hello Chevron"</span>
+
+hello_chevron() <span class="hljs-comment">#Outputs: Hello Chevron</span></code></pre>
+
+
+
+<h4 id="part-i-functions-exercise">Part I Functions Exercise</h4>
+
+<p>Create a function that holds the variable day and stock_price. Assign the string 2015-06-23 to day. Assign 100.09 to stock_price. Print out the day and the stock price. </p>
+
+
+
+<h3 id="parameters-and-arguments">Parameters and Arguments</h3>
+
+<p>Functions are even more useful ways to organize common functionality…just like a math function. You can pass variables to them have them do some calculation and give you and answer like this:</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-comment">#Parameters act as a variable name for the passed in argument</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">square</span><span class="hljs-params">(number)</span>:</span> 
+    <span class="hljs-keyword">return</span> number * number
+
+<span class="hljs-comment">#Example of passing a variable</span>
+square(<span class="hljs-number">4</span>)</code></pre>
+
+
+
+<h4 id="part-ii-functions-exercise">Part II Functions Exercise</h4>
+
+<p>Add to the previous exercise by removing the variable that you defined in the function and make them parameters. Outside the function call your function by passing in “2015-06-23” and “100.09”.</p>
+
+
+
+<h3 id="functions-calling-function">Functions Calling Function</h3>
+
+<p>Functions can also call functions</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">my_new_func</span><span class="hljs-params">(x)</span>:</span> 
+    <span class="hljs-keyword">return</span> my_other_function(x) + <span class="hljs-number">7</span></code></pre>
+
+
+
+<h2 id="listsdictionaries">Lists/Dictionaries</h2>
+
+<p>A really useful thing in many languages are called data structures. They give you the ability to hold a collection of information under a single variable name. This is a great way to organize and box up your contents just like when physically moving. </p>
+
+
+
+<h3 id="lists">Lists</h3>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">my_list = [<span class="hljs-string">"beer"</span>, <span class="hljs-string">"ramen"</span>, <span class="hljs-string">"red solo cups"</span>,<span class="hljs-string">"more beer"</span>]
+my_list2 = [<span class="hljs-number">100.0</span>, <span class="hljs-number">95.0</span>, <span class="hljs-number">88.0</span>, <span class="hljs-number">77.0</span>, <span class="hljs-number">70.0</span>, <span class="hljs-number">70.0</span>, <span class="hljs-number">65.0</span>, <span class="hljs-number">100.0</span>]</code></pre>
+
+<p>The way to access certain elements in a list is by getting the index they are located at. <strong>In programming most indexes start at 0.</strong></p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">my_list[<span class="hljs-number">0</span>] <span class="hljs-comment">#Accesses the content beer</span>
+my_list[<span class="hljs-number">1</span>] <span class="hljs-comment">#Accesses the content ramen</span>
+my_list[<span class="hljs-number">2</span>] <span class="hljs-comment">#Accesses the content red solo cups</span></code></pre>
+
+
+
+<h4 id="list-practice">List Practice</h4>
+
+<p>Make a list of stock prices. You are welcome to make it as long as you want.</p>
+
+
+
+<h4 id="list-capabilities-and-functions">List capabilities and functions</h4>
+
+<p>What makes python great is lists come with their own useful built in functions to help you manipulate and mine the data that they contain.</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-comment">#get the length of a list</span>
+my_list = [<span class="hljs-string">"beer"</span>, <span class="hljs-string">"ramen"</span>, <span class="hljs-string">"red solo cups"</span>,<span class="hljs-string">"more beer"</span>]
+<span class="hljs-keyword">print</span> len(my_list) <span class="hljs-comment">#Returns 4</span>
+
+<span class="hljs-comment">#slicing</span>
+my_new_list = my_list[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]
+<span class="hljs-keyword">print</span> my_new_list <span class="hljs-comment">#prints ["ramen","red solo cups"]</span>
+
+my_new_list2 = my_list[:<span class="hljs-number">2</span>] <span class="hljs-comment">#["beer", "ramen"]</span></code></pre>
+
+<p>Sometimes you need to actually remove or add items</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">my_new_list.append(<span class="hljs-string">"pizza"</span>) <span class="hljs-comment">#adds to the end of the list</span>
+my_new_list.insert(<span class="hljs-number">2</span>,<span class="hljs-string">"ping pong balls"</span>) <span class="hljs-comment">#["beer", "ramen", "ping pong balls", "red solo cups", "more beer"]</span>
+my_new_list.remove(<span class="hljs-string">"ramen"</span>) <span class="hljs-comment">#Removes ramen from the list </span></code></pre>
+
+
+
+<h4 id="list-practice-1">List Practice</h4>
+
+<p>Using the code from the previous exercise practice the above built-in functions.</p>
+
+
+
+<h3 id="dictionaries">Dictionaries</h3>
+
+<p>Dictionaries are similar to lists but you access the contents with a key. These keys are unique values so there can only be one key value pair.</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">my_gas_choice = {<span class="hljs-string">'premium'</span> : <span class="hljs-number">4.00</span>, <span class="hljs-string">'plus'</span> : <span class="hljs-number">3.89</span>, <span class="hljs-string">'unleaded'</span> : <span class="hljs-number">3.75</span>}
+
+<span class="hljs-comment">#Returns 4.00</span>
+my_gas_choice[<span class="hljs-string">'premium'</span>] 
+
+<span class="hljs-comment">#Add to the dictionary</span>
+my_gas_choice[<span class="hljs-string">'super Techron'</span>] = <span class="hljs-number">10.00</span>
+
+<span class="hljs-comment">#Reassigning a new value to premium</span>
+my_gas_choice[<span class="hljs-string">'premium'</span>] = <span class="hljs-number">8.00</span>
+
+<span class="hljs-comment">#To Remove a key value pair</span>
+<span class="hljs-keyword">del</span> my_gas_choice[<span class="hljs-string">'super Techron'</span>]</code></pre>
+
+
+
+<h4 id="dictionary-practice">Dictionary Practice</h4>
+
+<p>Make a dictionary with the key being the date in the format YYYY-MM-DD and the value be the stock price.</p>
+
+
+
+<h2 id="loops">Loops</h2>
+
+<p>Sometimes we want to be able to repeat actions. </p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">price_list = [<span class="hljs-number">1.99</span>, <span class="hljs-number">2.10</span>, <span class="hljs-number">2.20</span>]
+index = <span class="hljs-number">0</span>
+length = len(price_list) <span class="hljs-comment">#3</span>
+
+<span class="hljs-comment">#Adds .20 to all the prices in the list</span>
+<span class="hljs-keyword">while</span>(index &lt; length):
+    price_list[index] = price_list[index] + <span class="hljs-number">.20</span>
+    index = index + <span class="hljs-number">1</span></code></pre>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs ">price_list = [<span class="hljs-number">1.99</span>, <span class="hljs-number">2.10</span>, <span class="hljs-number">2.20</span>]
+<span class="hljs-comment">#Subtracts .20 off all of the prices</span>
+<span class="hljs-keyword">for</span> price <span class="hljs-keyword">in</span> price_list: 
+    price = price - <span class="hljs-number">.20</span></code></pre>
+
+
+
+<h4 id="loop-exercise">Loop Exercise</h4>
+
+<p>Loop through a list of stock prices and print them. Do this exercise once using a while and the second time use a for loop.</p>
+
+
+
+<h4 id="final-exercise">Final Exercise</h4>
+
+<p>Define the function add_stock_info()  that takes in the 2 parameters day and stock price and adds them to a dictionary with the day being the key and the stock price being the value.</p>
+
+<p>Define another function named main. In this function asks the user how many stock prices he/she wants to enter. Make a loop that asks the user the stock price and date the number of times the user inputted earlier. In this loop pass the given stock price and date to your  add_stock_info() function.</p>
+
+<p>Define a function called print_stock_info() that prints each stock entry dictionary</p>
+
+<p>Define a function that finds the highest stock price  and print that to the screen.</p>
+
+<p>Bonus Points:Also print the day with the stock price</p>
+
+
+
+<h2 id="resources">Resources</h2>
+
+
+
+<h3 id="style-guide">Style Guide</h3>
+
+<p><a href="https://www.python.org/dev/peps/pep-0008/">https://www.python.org/dev/peps/pep-0008/</a></p>
+
+
+
+<h3 id="learn-more-python">Learn More Python</h3>
+
+<p><a href="http://learnpythonthehardway.org/book">http://learnpythonthehardway.org/book</a> <br>
+<a href="https://developers.google.com/edu/python">https://developers.google.com/edu/python</a> <br>
+<a href="http://www.codecademy.com/">http://www.codecademy.com/</a></p></div></body>
+</html>
