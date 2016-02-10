@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Session 3</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="learn-to-code-series-python-workshop">Learn to Code Series - Python Workshop</h1>
+
+
+
+<h3 id="situation">Situation</h3>
+
+<p>ETC Ventures has given our team the task of assisting them with finding the best possible area in the US to look for Shale gas. Our BAs and TAs have researched and found a good strategy will be to use the EIA (Energy Information Administration) organizations data.  The EIA provides a wide range of information and data products covering energy production, stocks, demand, imports, exports, and prices; and prepares analyses and special reports on topics of current interest.</p>
+
+<p>Our team lead made an application to interface their API. The information she extracted contains each area’s history of new field discoveries. Her application extracted the data into a file for us to use in the format of json(JavaScript Object Notation).</p>
+
+<p>Her task for us is to make a file that gives us the top 5 areas in the US that have the the most field discoveries. This file will be put in our analytics tool to provide the venture team with charts to help them make their decisions.</p>
+
+<p>The email she sent contains the following tasks to be completed:</p>
+
+<ul>
+<li>Get the provided files</li>
+<li>Have your program open the file and print it</li>
+<li>Print out the area specified by user input</li>
+<li>Get the total shale gas fields found for a specific area</li>
+<li>Find and print the top five areas that have discovered the most shale gas fields</li>
+<li>Save your top areas to a json file</li>
+<li>Upload your file to the analytics server </li>
+</ul>
+
+
+
+<h4 id="step-1-get-the-provided-files">Step 1: Get the provided files</h4>
+
+<ol>
+<li><p>Get these files from our <a href="http://146.27.96.180/gabewonders/learn-to-code">Learn to Code Git Repo</a></p>
+
+<ul><li><code>shaleGasFinder.py</code></li>
+<li><code>areaNames.txt</code></li>
+<li><code>newFieldData.json</code></li></ul></li>
+<li><p>Let’s discuss how json files work <br>
+<a href="http://code.tutsplus.com/tutorials/understanding-json--active-8817">http://code.tutsplus.com/tutorials/understanding-json–active-8817</a></p></li>
+</ol>
+
+
+
+<h4 id="step-2-have-your-program-open-the-json-file-and-print-it">Step 2: Have your program open the json file and print it</h4>
+
+<ol>
+<li><p>Open the file and return the file contents as a string</p>
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_json_data_from_file</span><span class="hljs-params">(file_name)</span>:</span>
+    <span class="hljs-keyword">with</span> open(file_name) <span class="hljs-keyword">as</span> jsonFile:
+        <span class="hljs-keyword">return</span> json.load(jsonFile)</code></pre></li>
+<li><p>Print out the file. In <code>main()</code> add the following lines</p>
+
+<pre class="prettyprint"><code class="language-python hljs ">json_data = get_json_data_from_file(<span class="hljs-string">"newFieldData.json"</span>)
+<span class="hljs-keyword">print</span> json_data</code></pre></li>
+<li><p>Eww that’s ugly! Let’s make that print look pretty.</p>
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_json_data</span><span class="hljs-params">(json_data)</span>:</span>
+    <span class="hljs-keyword">print</span> json.dumps(json_data, indent=<span class="hljs-number">4</span>, sort_keys = <span class="hljs-keyword">True</span>)</code></pre></li>
+<li><p>Now let’s call that function in <code>main()</code>. Much nicer right?</p>
+
+<pre class="prettyprint"><code class="language-python hljs ">print_json_data(json_data)</code></pre></li>
+</ol>
+
+
+
+<h4 id="step-3-print-out-the-area-specified-by-user-input">Step 3: Print out the area specified by user input</h4>
+
+<ol>
+<li><p>Return the json object for the specific name provided</p>
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">find_area_object_with_name</span><span class="hljs-params">(area_name, areas)</span>:</span>
+    <span class="hljs-keyword">for</span> area <span class="hljs-keyword">in</span> areas:
+        <span class="hljs-keyword">if</span> area[<span class="hljs-string">"name"</span>].lower() == area_name.lower():
+            <span class="hljs-keyword">return</span> area</code></pre></li>
+<li><p>In <code>main()</code> get all the arrays named <code>areas</code> in the json file</p>
+
+<pre class="prettyprint"><code class="language-python hljs ">areas = json_data[<span class="hljs-string">'areas'</span>]</code></pre></li>
+<li><p>Still in<code>main()</code> ask the user what they are searching for and save the input into a variable. Now let’s call your function you just created and print what it returns.</p>
+
+<pre class="prettyprint"><code class="language-python hljs ">area_name = raw_input(<span class="hljs-string">"Enter in the name of the area you are searching for: "</span>)
+area_data = find_area_object_with_name(area_name, areas)
+print_json_data(area_data)</code></pre></li>
+</ol>
+
+
+
+<h4 id="step-4-get-the-total-shale-gas-fields-found-for-a-specific-area">Step 4: Get the total shale gas fields found for a specific area</h4>
+
+<ol>
+<li><p>Iterate through all the years for a given area and add them up to get the total fields found.</p>
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_total_fields_found</span><span class="hljs-params">(year_data)</span>:</span>
+    total_fields = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> value <span class="hljs-keyword">in</span> year_data.itervalues() :
+        total_fields = total_fields + value
+    <span class="hljs-keyword">return</span> total_fields</code></pre></li>
+<li><p>Let’s call that function in <code>main()</code></p>
+
+<pre class="prettyprint"><code class="language-python hljs ">total_for_area = get_total_fields_found(area_data[<span class="hljs-string">"newFields"</span>])</code></pre></li>
+</ol>
+
+
+
+<h4 id="step-5-find-and-print-the-top-five-areas-that-have-discovered-the-most-shale-gas-fields">Step 5: Find and print the top five areas that have discovered the most shale gas fields</h4>
+
+<ol>
+<li><p>Create a function to find the top areas</p>
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_top_areas</span><span class="hljs-params">(number_of_areas_needed, areas)</span>:</span></code></pre></li>
+<li><p>Within that function loop through the areas</p>
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-keyword">for</span> area <span class="hljs-keyword">in</span> areas:
+    year_data = area[<span class="hljs-string">'newFields'</span>]
+    total_for_area = get_total_fields_found(year_data)
+    <span class="hljs-comment">#add totalFieldsFound property to area dictionary so we can compare</span>
+    area[<span class="hljs-string">'totalFieldsFound'</span>] = total_for_area</code></pre></li>
+<li><p>Let’s sort the areas using our new field <code>totalFieldsFound</code></p>
+
+<pre class="prettyprint"><code class="language-python hljs ">area_object = sorted(areas, key = <span class="hljs-keyword">lambda</span> area:(area[<span class="hljs-string">'totalFieldsFound'</span>]), reverse=<span class="hljs-keyword">True</span>)
+area_object = area_object[:number_of_areas_needed]
+<span class="hljs-keyword">return</span> area_object</code></pre></li>
+<li><p>Call your new function in <code>main()</code> </p>
+
+<pre class="prettyprint"><code class="language-python hljs ">number_of_areas_needed = int(raw_input(<span class="hljs-string">"How many top areas do you want? "</span>))
+top_areas = get_top_areas(number_of_areas_needed, areas)
+print_json_data(top_areas)</code></pre></li>
+</ol>
+
+
+
+<h4 id="step-6-save-your-top-areas-to-a-json-file">Step 6: Save your top areas to a json file</h4>
+
+<ol>
+<li><p>Create a function to save a json file of your top areas</p>
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_json_to_file</span><span class="hljs-params">(jsonData, fileName)</span>:</span>
+    <span class="hljs-keyword">with</span> open(fileName + <span class="hljs-string">'.json'</span>, <span class="hljs-string">'w'</span>) <span class="hljs-keyword">as</span> outfile:
+        json.dump(jsonData , outfile, indent = <span class="hljs-number">4</span>)</code></pre></li>
+<li><p>Call the function in <code>main()</code></p></li>
+</ol>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-comment">#Assign top areas to json object to</span>
+json_data[<span class="hljs-string">'areas'</span>] = top_areas
+output_file_name = raw_input(<span class="hljs-string">"Enter in the output file name for the analytics server: "</span>)
+write_json_to_file(json_data, output_file_name)
+<span class="hljs-keyword">print</span> <span class="hljs-string">"Wrote to \""</span> + output_file_name + <span class="hljs-string">".json\""</span></code></pre>
+
+
+
+<h4 id="step-7-upload-your-new-json-file-to-our-analytics-server">Step 7: Upload your new json file to our analytics server</h4>
+
+<ol>
+<li>We’ll demo this for you! <br>
+<a href="http://run.plnkr.co/Yaah55os4oo4K7AP/">http://run.plnkr.co/Yaah55os4oo4K7AP/</a></li>
+</ol></div></body>
+</html>

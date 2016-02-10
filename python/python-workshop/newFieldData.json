@@ -1,0 +1,579 @@
+
+{
+  "units": "Billion Cubic Feet",
+  "frequency": "Annual",
+  "unitsshort": "BCF",
+  "source": "EIA, U.S. Energy Information Administration",
+  "copyright": "None",
+  "areas": [
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 9 Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 11,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2009",
+      "name": "Texas--RRC District 9"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Colorado Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 4,
+        "2010": 0,
+        "2011": 0,
+        "2012": 6,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-CO",
+      "iso3166": "USA-CO",
+      "start": "2009",
+      "name": "Colorado"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "New Mexico--West Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-NM",
+      "iso3166": "USA-NM",
+      "start": "2009",
+      "name": "New Mexico--West"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 3 onshore Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2009",
+      "name": "Texas--RRC District 3 onshore"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Pennsylvania Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 120,
+        "2010": 49,
+        "2011": 162,
+        "2012": 251,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-PA",
+      "iso3166": "USA-PA",
+      "start": "2009",
+      "name": "Pennsylvania"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 6 Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2009",
+      "name": "Texas--RRC District 6"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Kentucky Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-KY",
+      "iso3166": "USA-KY",
+      "start": "2009",
+      "name": "Kentucky"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "New Mexico Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-NM",
+      "iso3166": "USA-NM",
+      "start": "2009",
+      "name": "New Mexico"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 2 onshore Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2010": 282,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2010",
+      "name": "Texas--RRC District 2 onshore"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Wyoming Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-WY",
+      "iso3166": "USA-WY",
+      "start": "2009",
+      "name": "Wyoming"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Arkansas Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-AR",
+      "iso3166": "USA-AR",
+      "start": "2009",
+      "name": "Arkansas"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 1 Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 353,
+        "2010": 114,
+        "2011": 20,
+        "2012": 39,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2009",
+      "name": "Texas--RRC District 1"
+    },
+    {
+      "updated": "2013-08-13T11:49:51-0400",
+      "end": "2010",
+      "description": "Texas--State Offshore Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2009",
+      "name": "Texas--State Offshore"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Louisiana--North Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 244,
+        "2010": 48,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-LA",
+      "iso3166": "USA-LA",
+      "start": "2009",
+      "name": "Louisiana--North"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "New Mexico--East Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-NM",
+      "iso3166": "USA-NM",
+      "start": "2009",
+      "name": "New Mexico--East"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 10 Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2009",
+      "name": "Texas--RRC District 10"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 4 onshore Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2009",
+      "name": "Texas--RRC District 4 onshore"
+    },
+    {
+      "updated": "2015-01-08T15:30:42-0500",
+      "end": "2013",
+      "description": "Ohio Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2013": 16
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-OH",
+      "iso3166": "USA-OH",
+      "start": "2009",
+      "name": "Ohio"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Montana Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-MT",
+      "iso3166": "USA-MT",
+      "start": "2009",
+      "name": "Montana"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "North Dakota Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 6,
+        "2010": 8,
+        "2011": 2,
+        "2012": 1,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-ND",
+      "iso3166": "USA-ND",
+      "start": "2009",
+      "name": "North Dakota"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "West Virginia Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 141,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-WV",
+      "iso3166": "USA-WV",
+      "start": "2009",
+      "name": "West Virginia"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 5 Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2009",
+      "name": "Texas--RRC District 5"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 7C Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2010",
+      "name": "Texas--RRC District 7C"
+    },
+    {
+      "updated": "2015-01-08T15:30:42-0500",
+      "end": "2013",
+      "description": "Miscellaneous States Shale Gas Proved Reserves New Field Discoveries",
+      "source": "EIA, U.S. Energy Information Administration",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 5,
+        "2013": 0
+      },
+      "start": "2009",
+      "name": "Miscellaneous States"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Alaska (with Total Offshore) Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-AK",
+      "iso3166": "USA-AK",
+      "start": "2009",
+      "name": "Alaska (with Total Offshore)"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Michigan Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 2,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-MI",
+      "iso3166": "USA-MI",
+      "start": "2009",
+      "name": "Michigan"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Oklahoma Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 54,
+        "2011": 37,
+        "2012": 47,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-OK",
+      "iso3166": "USA-OK",
+      "start": "2009",
+      "name": "Oklahoma"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 8 Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 1,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2009",
+      "name": "Texas--RRC District 8"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 7B Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2009": 0,
+        "2010": 0,
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2009",
+      "name": "Texas--RRC District 7B"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Virginia Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-VA",
+      "iso3166": "USA-VA",
+      "start": "2012",
+      "name": "Virginia"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Texas--RRC District 8A Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-TX",
+      "iso3166": "USA-TX",
+      "start": "2012",
+      "name": "Texas--RRC District 8A"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Mississippi (with State off) Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-MS",
+      "iso3166": "USA-MS",
+      "start": "2012",
+      "name": "Mississippi (with State off)"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Kansas Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2012": 3,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-KS",
+      "iso3166": "USA-KS",
+      "start": "2012",
+      "name": "Kansas"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "Louisiana--South Onshore Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-LA",
+      "iso3166": "USA-LA",
+      "start": "2012",
+      "name": "Louisiana--South Onshore"
+    },
+    {
+      "updated": "2014-12-04T10:46:54-0500",
+      "end": "2013",
+      "description": "California (with State off) Shale Proved Reserves New Field Discoveries",
+      "newFields": {
+        "2011": 0,
+        "2012": 0,
+        "2013": 0
+      },
+      "source": "EIA, U.S. Energy Information Administration",
+      "geography": "USA-CA",
+      "iso3166": "USA-CA",
+      "start": "2011",
+      "name": "California (with State off)"
+    }
+  ]
+}
